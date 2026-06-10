@@ -1,0 +1,73 @@
+@font-face {
+  font-family: "Gliker-Black";
+  src: url("fonts/Gliker-Black.woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Patrick Hand", cursive;
+  background-color: #bfbcb7;
+  height: 100dvh;
+  color: #111;
+}
+.container,
+.content-container {
+  display: flex;
+}
+img {
+  max-width: 100%;
+  display: block;
+  height: 100vh;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+.content-container {
+  flex: 1 1 auto;
+  align-items: center;
+  max-height: 100vh;
+  justify-content: center;
+}
+.image-container {
+  flex: 1 2 auto;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem;
+  background-color: #b8b2a6;
+  z-index: 1000;
+}
+.logo a {
+  font-family: "Rubik Puddles", system-ui;
+  color: white;
+  text-decoration: none;
+}
+.navbar {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 8px solid #bfc1c0;
+}
+.nav-links {
+  display: flex;
+
+  gap: 20px;
+
+  list-style: none;
+}

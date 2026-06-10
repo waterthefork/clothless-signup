@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Rubik+Puddles&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Login - CLOTHLESS</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="navbar">
+      <h2 class="logo"><a href=""> CLOTHLESS</a></h2>
+
+      <ul class="nav-links">
+        <li><a href="#">Gallery</a></li>
+        <li>
+          <a href="https://waterthefork.github.io/clothless-signup/">Signup</a>
+        </li>
+      </ul>
+    </header>
+
+    <main class="container">
+      <div class="image-container">
+        <img src="images/andrej-lisakov-Yy4sN6QzboU-unsplash.jpg" alt="" />
+      </div>
+
+      <div class="content-container">
+        <div class="form-container">
+          <h1>Join CLOTHLESS</h1>
+
+          <p class="subtitle">The world's leading invisible fashion brand.</p>
+
+          <form action="">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="first-name">First Name</label>
+
+                <input type="text" id="first-name" name="first-name" />
+              </div>
+
+              <div class="form-group">
+                <label for="last-name">Last Name</label>
+
+                <input type="text" id="last-name" name="last-name" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email</label>
+
+                <input type="email" id="email" name="email" />
+              </div>
+
+              <div class="form-group">
+                <label for="phone-number">Phone Number</label>
+
+                <input type="tel" id="phone-number" name="phone-number" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="dob">Date of Birth</label>
+
+                <input type="date" id="dob" name="dob" />
+              </div>
+
+              <div class="form-group">
+                <label for="sex">Sex</label>
+
+                <select id="sex" name="sex">
+                  <option value="">Select</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="button-group">
+              <button type="submit" class="btn">Submit</button>
+
+              <button type="reset" class="btn">Cancel</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
