@@ -19,12 +19,17 @@
 
   <body>
     <header class="navbar">
-      <h2 class="logo"><a href=""> CLOTHLESS</a></h2>
-
+      <h2 class="logo"><a href="#">CLOTHLESS</a></h2>
       <ul class="nav-links">
-        <li><a href="#">Gallery</a></li>
         <li>
-          <a href="https://waterthefork.github.io/clothless-signup/">Signup</a>
+          <a
+            href="https://waterthefork.github.io/clothless-landing-page/#gallery"
+            target="_blank"
+            >Gallery</a
+          >
+        </li>
+        <li>
+          <a href="https://github.com/waterthefork" target="_blank">Github</a>
         </li>
       </ul>
     </header>
@@ -37,21 +42,20 @@
       <div class="content-container">
         <div class="form-container">
           <h1>Join CLOTHLESS</h1>
-
-          <p class="subtitle">The world's leading invisible fashion brand.</p>
+          <p class="subtitle">World's First invisible fashion brand.</p>
 
           <form action="">
             <div class="form-row">
               <div class="form-group">
                 <label for="first-name">First Name</label>
 
-                <input type="text" id="first-name" name="first-name" />
+                <input type="text" id="first-name" name="first-name" required />
               </div>
 
               <div class="form-group">
                 <label for="last-name">Last Name</label>
 
-                <input type="text" id="last-name" name="last-name" />
+                <input type="text" id="last-name" name="last-name" required />
               </div>
             </div>
 
@@ -59,13 +63,18 @@
               <div class="form-group">
                 <label for="email">Email</label>
 
-                <input type="email" id="email" name="email" />
+                <input type="email" id="email" name="email" required />
               </div>
 
               <div class="form-group">
                 <label for="phone-number">Phone Number</label>
 
-                <input type="tel" id="phone-number" name="phone-number" />
+                <input
+                  type="tel"
+                  id="phone-number"
+                  name="phone-number"
+                  required
+                />
               </div>
             </div>
 
@@ -73,24 +82,34 @@
               <div class="form-group">
                 <label for="dob">Date of Birth</label>
 
-                <input type="date" id="dob" name="dob" />
+                <input type="date" id="dob" name="dob" required />
               </div>
 
               <div class="form-group">
                 <label for="sex">Sex</label>
 
-                <select id="sex" name="sex">
+                <select id="sex" name="sex" required>
                   <option value="">Select</option>
                   <option value="male">Male</option>
                   <option value="female">Female</option>
                   <option value="other">Other</option>
                 </select>
               </div>
+
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  required
+                  minlength="8"
+                />
+              </div>
             </div>
 
             <div class="button-group">
               <button type="submit" class="btn">Submit</button>
-
               <button type="reset" class="btn">Cancel</button>
             </div>
           </form>
